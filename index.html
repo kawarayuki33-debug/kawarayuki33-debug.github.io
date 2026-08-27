@@ -1,18 +1,256 @@
+```html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Essay Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Common Question</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #f7f5f0;
+            color: #222;
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
+        header {
+            border-bottom: 1px solid #222;
+            padding: 25px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #222;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 0 30px;
+        }
+
+        .intro {
+            max-width: 700px;
+            margin-bottom: 100px;
+        }
+
+        .intro h1 {
+            font-size: 64px;
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .intro p {
+            font-size: 21px;
+            line-height: 1.6;
+        }
+
+        .section-title {
+            border-top: 1px solid #222;
+            padding-top: 15px;
+            margin-bottom: 40px;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .essay {
+            border-bottom: 1px solid #bbb;
+            padding: 0 0 35px 0;
+            margin-bottom: 35px;
+        }
+
+        .essay h2 {
+            font-size: 34px;
+            margin: 0 0 10px 0;
+        }
+
+        .essay p {
+            font-size: 17px;
+            line-height: 1.6;
+            max-width: 700px;
+        }
+
+        .read {
+            color: #222;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .read:hover {
+            text-decoration: underline;
+        }
+
+        .impact {
+            margin-top: 120px;
+            padding: 50px;
+            background: #222;
+            color: #f7f5f0;
+        }
+
+        .impact h2 {
+            font-size: 36px;
+            margin-top: 0;
+        }
+
+        .impact p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 650px;
+        }
+
+        footer {
+            border-top: 1px solid #222;
+            margin-top: 100px;
+            padding: 30px 7%;
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>My Essay Project</h1>
+<header>
 
-    <p>Essays about people, culture, technology, and the questions that matter.</p>
+    <div class="logo">
+        THE COMMON QUESTION
+    </div>
 
-    <h2>Essays</h2>
+    <nav>
+        <a href="index.html">Essays</a>
+        <a href="about.html">About</a>
+        <a href="impact.html">Impact</a>
+    </nav>
 
-    <p>Coming soon.</p>
+</header>
+
+
+<main>
+
+    <section class="intro">
+
+        <h1>Questions worth thinking about.</h1>
+
+        <p>
+            Essays about people, culture, technology,
+            education, and the questions that sit
+            between them.
+        </p>
+
+    </section>
+
+
+    <div class="section-title">
+        Latest essays
+    </div>
+
+
+    <article class="essay">
+
+        <h2>
+            Does AI Make Human Conversation Less Valuable?
+        </h2>
+
+        <p>
+            What happens to human connection when
+            machines become capable of talking to us
+            like people?
+        </p>
+
+        <a class="read" href="#">
+            Read essay →
+        </a>
+
+    </article>
+
+
+    <article class="essay">
+
+        <h2>
+            Does Education Create National Identity?
+        </h2>
+
+        <p>
+            The things we learn as children may shape
+            not only what we know, but how we understand
+            the society we belong to.
+        </p>
+
+        <a class="read" href="#">
+            Read essay →
+        </a>
+
+    </article>
+
+
+    <article class="essay">
+
+        <h2>
+            What Makes a Person Valuable?
+        </h2>
+
+        <p>
+            If technology continues to replace more
+            and more things humans can do, what remains
+            uniquely valuable about being human?
+        </p>
+
+        <a class="read" href="#">
+            Read essay →
+        </a>
+
+    </article>
+
+
+    <section class="impact">
+
+        <h2>
+            Ideas should leave the page.
+        </h2>
+
+        <p>
+            This project connects reading with real-world
+            action. Readers can voluntarily contribute to
+            charitable causes after reading an essay.
+        </p>
+
+        <p>
+            <strong>¥0</strong> contributed so far.
+        </p>
+
+        <a class="read" href="#" style="color: #f7f5f0;">
+            See the impact →
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    © 2026 The Common Question
+
+</footer>
 
 </body>
 </html>
+```
