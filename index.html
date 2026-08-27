@@ -6,132 +6,266 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>The Common Question</title>
+    <title>Essays done by Jacob</title>
 
     <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            background: #f7f5f0;
-            color: #222;
+            background: #e8e2d5;
+            color: #25231f;
             font-family: Georgia, "Times New Roman", serif;
         }
 
+        /* HEADER */
+
         header {
-            border-bottom: 1px solid #222;
-            padding: 25px 7%;
+            padding: 28px 5%;
+            border-bottom: 3px solid #25231f;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-size: 24px;
+        .logo-small {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
             font-weight: bold;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
 
         nav a {
-            margin-left: 25px;
-            color: #222;
+            margin-left: 28px;
+            color: #25231f;
             text-decoration: none;
-            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         nav a:hover {
             text-decoration: underline;
         }
 
+
+        /* MAIN */
+
         main {
-            max-width: 1000px;
-            margin: 80px auto;
-            padding: 0 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 35px 100px;
         }
 
-        .intro {
-            max-width: 700px;
-            margin-bottom: 100px;
+
+        /* TITLE */
+
+        .title {
+            text-align: center;
+            margin: 55px auto 100px;
+            max-width: 850px;
         }
 
-        .intro h1 {
-            font-size: 64px;
-            line-height: 1.05;
-            margin-bottom: 25px;
-        }
-
-        .intro p {
-            font-size: 21px;
-            line-height: 1.6;
-        }
-
-        .section-title {
-            border-top: 1px solid #222;
-            padding-top: 15px;
-            margin-bottom: 40px;
-            font-size: 14px;
-            letter-spacing: 2px;
+        .title-large {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(70px, 13vw, 150px);
+            font-weight: 900;
+            line-height: 0.78;
+            letter-spacing: -7px;
             text-transform: uppercase;
         }
 
-        .essay {
-            border-bottom: 1px solid #bbb;
-            padding: 0 0 35px 0;
+        .title-middle {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 21px;
+            font-style: italic;
+            margin: 22px 0;
+        }
+
+        .title-bottom {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: clamp(70px, 13vw, 150px);
+            font-weight: 900;
+            line-height: 0.78;
+            letter-spacing: -7px;
+            text-transform: uppercase;
+        }
+
+
+        /* INTRO */
+
+        .intro {
+            border-top: 3px solid #25231f;
+            border-bottom: 3px solid #25231f;
+            padding: 25px 0;
+            margin-bottom: 90px;
+        }
+
+        .intro p {
+            max-width: 650px;
+            font-size: 22px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+
+        /* SECTION TITLE */
+
+        .section-title {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
             margin-bottom: 35px;
         }
 
+
+        /* ESSAYS */
+
+        .essay {
+            border-top: 1px solid #777066;
+            padding: 28px 0 35px;
+        }
+
+        .essay:last-child {
+            border-bottom: 1px solid #777066;
+        }
+
+        .essay-number {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+        }
+
         .essay h2 {
-            font-size: 34px;
-            margin: 0 0 10px 0;
+            font-size: 40px;
+            line-height: 1.05;
+            font-weight: normal;
+            margin: 0 0 15px;
+            max-width: 850px;
         }
 
         .essay p {
             font-size: 17px;
             line-height: 1.6;
             max-width: 700px;
+            margin-bottom: 20px;
         }
 
         .read {
-            color: #222;
+            color: #25231f;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
             font-weight: bold;
+            letter-spacing: 1px;
             text-decoration: none;
+            text-transform: uppercase;
         }
 
         .read:hover {
             text-decoration: underline;
         }
 
+
+        /* IMPACT */
+
         .impact {
-            margin-top: 120px;
-            padding: 50px;
-            background: #222;
-            color: #f7f5f0;
+            margin-top: 100px;
+            border: 3px solid #25231f;
+            padding: 45px;
+            transform: rotate(-0.5deg);
         }
 
         .impact h2 {
-            font-size: 36px;
-            margin-top: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 42px;
+            line-height: 1;
+            margin: 0 0 20px;
         }
 
         .impact p {
+            max-width: 650px;
             font-size: 18px;
             line-height: 1.6;
-            max-width: 650px;
         }
 
-        footer {
-            border-top: 1px solid #222;
-            margin-top: 100px;
-            padding: 30px 7%;
-            font-size: 14px;
+        .money {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 25px 0;
         }
+
+
+        /* FOOTER */
+
+        footer {
+            border-top: 3px solid #25231f;
+            padding: 25px 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            header {
+                display: block;
+            }
+
+            nav {
+                margin-top: 18px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 18px;
+            }
+
+            .title {
+                margin-top: 45px;
+                margin-bottom: 70px;
+            }
+
+            .title-large,
+            .title-bottom {
+                letter-spacing: -4px;
+            }
+
+            .essay h2 {
+                font-size: 30px;
+            }
+
+            .impact {
+                padding: 30px;
+            }
+
+        }
+
     </style>
+
 </head>
+
 
 <body>
 
+
 <header>
 
-    <div class="logo">
-        THE COMMON QUESTION
+    <div class="logo-small">
+        Independent Writing Project
     </div>
 
     <nav>
@@ -145,18 +279,40 @@
 
 <main>
 
+
+    <!-- TITLE -->
+
+    <section class="title">
+
+        <div class="title-large">
+            Essays
+        </div>
+
+        <div class="title-middle">
+            done by
+        </div>
+
+        <div class="title-bottom">
+            Jacob
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
     <section class="intro">
 
-        <h1>Questions worth thinking about.</h1>
-
         <p>
-            Essays about people, culture, technology,
-            education, and the questions that sit
-            between them.
+            Thoughts on people, culture, technology,
+            education, and the strange questions that
+            appear when they collide.
         </p>
 
     </section>
 
+
+    <!-- ESSAYS -->
 
     <div class="section-title">
         Latest essays
@@ -164,6 +320,10 @@
 
 
     <article class="essay">
+
+        <div class="essay-number">
+            No. 001
+        </div>
 
         <h2>
             Does AI Make Human Conversation Less Valuable?
@@ -184,6 +344,10 @@
 
     <article class="essay">
 
+        <div class="essay-number">
+            No. 002
+        </div>
+
         <h2>
             Does Education Create National Identity?
         </h2>
@@ -203,6 +367,10 @@
 
     <article class="essay">
 
+        <div class="essay-number">
+            No. 003
+        </div>
+
         <h2>
             What Makes a Person Valuable?
         </h2>
@@ -220,6 +388,8 @@
     </article>
 
 
+    <!-- IMPACT -->
+
     <section class="impact">
 
         <h2>
@@ -227,29 +397,35 @@
         </h2>
 
         <p>
-            This project connects reading with real-world
-            action. Readers can voluntarily contribute to
-            charitable causes after reading an essay.
+            Reading is free. If an essay gives you
+            something worth thinking about, you can
+            contribute to the project's charity fund.
         </p>
+
+        <div class="money">
+            ¥0
+        </div>
 
         <p>
-            <strong>¥0</strong> contributed so far.
+            currently contributed to charity
         </p>
 
-        <a class="read" href="#" style="color: #f7f5f0;">
+        <a class="read" href="impact.html">
             See the impact →
         </a>
 
     </section>
+
 
 </main>
 
 
 <footer>
 
-    © 2026 The Common Question
+    Essays done by Jacob · 2026
 
 </footer>
+
 
 </body>
 </html>
