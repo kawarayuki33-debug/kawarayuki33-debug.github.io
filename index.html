@@ -1,21 +1,19 @@
-S```html
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Essays done by Jacob</title>
-    
- .intro p {
-            max-width: 650px;
-            font-size: 22px;
-            line-height: 1.5;
-            margin: 0;
-        }
-    
+
     <style>
+
+        /* =========================
+           GENERAL
+        ========================= */
 
         * {
             box-sizing: border-box;
@@ -23,16 +21,20 @@ S```html
 
         body {
             margin: 0;
-            background: #e8e2d5;
+            background: #e4ddcf;
             color: #25231f;
             font-family: Georgia, "Times New Roman", serif;
         }
 
-        /* HEADER */
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
-            padding: 28px 5%;
+            padding: 25px 5%;
             border-bottom: 3px solid #25231f;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -48,8 +50,10 @@ S```html
 
         nav a {
             margin-left: 28px;
+
             color: #25231f;
             text-decoration: none;
+
             font-family: Arial, Helvetica, sans-serif;
             font-size: 13px;
             font-weight: bold;
@@ -62,115 +66,198 @@ S```html
         }
 
 
-        /* MAIN */
+        /* =========================
+           MAIN
+        ========================= */
 
         main {
-            max-width: 1100px;
+            max-width: 1050px;
             margin: 0 auto;
             padding: 0 35px 100px;
         }
 
 
-        /* TITLE */
+        /* =========================
+           BIG TITLE
+        ========================= */
 
         .title {
             text-align: center;
-            margin: 55px auto 100px;
-            max-width: 850px;
+
+            margin: 55px auto 85px;
+
+            max-width: 900px;
         }
 
         .title-large {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: clamp(70px, 13vw, 150px);
+
+            font-size: clamp(75px, 14vw, 155px);
+
             font-weight: 900;
+
             line-height: 0.78;
-            letter-spacing: -7px;
+
+            letter-spacing: -8px;
+
             text-transform: uppercase;
         }
 
-    .title-middle {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 28px;
+        .title-middle {
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 28px;
+
             font-style: italic;
-           margin: 26px 0;
+
+            margin: 28px 0;
         }
 
         .title-bottom {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: clamp(70px, 13vw, 150px);
+
+            font-size: clamp(75px, 14vw, 155px);
+
             font-weight: 900;
+
             line-height: 0.78;
-            letter-spacing: -7px;
+
+            letter-spacing: -8px;
+
             text-transform: uppercase;
         }
 
 
-        /* INTRO */
+        /* =========================
+           JACOB INTRODUCTION
+        ========================= */
 
-      <section class="intro">
+        .intro {
+            border-top: 3px solid #25231f;
+            border-bottom: 3px solid #25231f;
 
-    <p>
-        Hi I'm Jacob. Jacob is a kid trying to send his thoughts into the world.
-        Jacob believes that words have power. But, Jacob is not so good at writing essays.
-        This is why Jacob will continue to publish essays as training.
-        Jacob wants to do something for the world.
-    </p>
+            padding: 24px 0;
 
-</section>
-       
-        /* SECTION TITLE */
+            margin-bottom: 75px;
+        }
+
+        .intro p {
+            max-width: 720px;
+
+            font-size: 19px;
+
+            line-height: 1.65;
+
+            margin: 0;
+        }
+
+
+        /* =========================
+           SECTION TITLE
+        ========================= */
 
         .section-title {
             font-family: Arial, Helvetica, sans-serif;
+
             font-size: 14px;
+
             font-weight: bold;
+
             letter-spacing: 3px;
+
             text-transform: uppercase;
-            margin-bottom: 35px;
+
+            margin-bottom: 28px;
         }
 
 
-        /* ESSAYS */
+        /* =========================
+           ESSAYS
+        ========================= */
 
-  .essay {
-    border: 2px solid #777066;
-    padding: 22px 28px 28px;
-    margin: 0 auto 22px;
-    max-width: 850px;
-    background: #eee9df;
-}
+        .essay {
+            border: 2px solid #777066;
 
-        
-.essay-number {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 18px;
-}
+            padding: 22px 28px 28px;
 
-       .essay h2 {
-    font-size: 34px;
-            line-height: 1.05;
-            font-weight: normal;
-            margin: 0 0 15px;
+            margin: 0 auto 22px;
+
             max-width: 850px;
+
+            background: #eee9df;
         }
+
+        .essay:nth-of-type(2) {
+            transform: rotate(-0.35deg);
+        }
+
+        .essay:nth-of-type(3) {
+            transform: rotate(0.25deg);
+        }
+
+        .essay:nth-of-type(4) {
+            transform: rotate(-0.2deg);
+        }
+
+
+        /* ESSAY NUMBER */
+
+        .essay-number {
+            font-family: Arial, Helvetica, sans-serif;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 16px;
+        }
+
+
+        /* ESSAY TITLE */
+
+        .essay h2 {
+            font-size: 34px;
+
+            line-height: 1.08;
+
+            font-weight: normal;
+
+            margin: 0 0 13px;
+
+            max-width: 800px;
+        }
+
+
+        /* ESSAY DESCRIPTION */
 
         .essay p {
-            font-size: 17px;
+            font-size: 16px;
+
             line-height: 1.6;
-            max-width: 700px;
-            margin-bottom: 20px;
+
+            max-width: 650px;
+
+            margin: 0 0 18px;
         }
+
+
+        /* READ BUTTON */
 
         .read {
             color: #25231f;
+
             font-family: Arial, Helvetica, sans-serif;
+
             font-size: 13px;
+
             font-weight: bold;
+
             letter-spacing: 1px;
+
             text-decoration: none;
+
             text-transform: uppercase;
         }
 
@@ -179,49 +266,75 @@ S```html
         }
 
 
-        /* IMPACT */
+        /* =========================
+           CHARITY / IMPACT
+        ========================= */
 
         .impact {
-            margin-top: 100px;
+            margin: 95px auto 0;
+
+            max-width: 900px;
+
             border: 3px solid #25231f;
-            padding: 45px;
+
+            padding: 40px;
+
             transform: rotate(-0.5deg);
+
+            background: #ddd5c6;
         }
 
         .impact h2 {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 42px;
+
+            font-size: 40px;
+
             line-height: 1;
-            margin: 0 0 20px;
+
+            margin: 0 0 18px;
         }
 
         .impact p {
             max-width: 650px;
-            font-size: 18px;
+
+            font-size: 17px;
+
             line-height: 1.6;
         }
 
         .money {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 48px;
+
+            font-size: 46px;
+
             font-weight: bold;
-            margin: 25px 0;
+
+            margin: 25px 0 5px;
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             border-top: 3px solid #25231f;
+
             padding: 25px 5%;
+
             font-family: Arial, Helvetica, sans-serif;
+
             font-size: 12px;
+
             letter-spacing: 1px;
+
             text-transform: uppercase;
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 700px) {
 
@@ -238,9 +351,14 @@ S```html
                 margin-right: 18px;
             }
 
+            main {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
             .title {
                 margin-top: 45px;
-                margin-bottom: 70px;
+                margin-bottom: 65px;
             }
 
             .title-large,
@@ -248,12 +366,32 @@ S```html
                 letter-spacing: -4px;
             }
 
+            .title-middle {
+                font-size: 23px;
+            }
+
+            .intro p {
+                font-size: 17px;
+            }
+
+            .essay {
+                padding: 20px 22px 25px;
+            }
+
             .essay h2 {
-                font-size: 30px;
+                font-size: 29px;
+            }
+
+            .essay-number {
+                font-size: 16px;
             }
 
             .impact {
                 padding: 30px;
+            }
+
+            .impact h2 {
+                font-size: 32px;
             }
 
         }
@@ -266,171 +404,183 @@ S```html
 <body>
 
 
-<header>
+    <!-- =========================
+         HEADER
+    ========================= -->
 
-    <div class="logo-small">
-        Independent Writing Project
-    </div>
+    <header>
 
-    <nav>
-        <a href="index.html">Essays</a>
-        <a href="about.html">About</a>
-        <a href="impact.html">Impact</a>
-    </nav>
-
-</header>
-
-
-<main>
-
-
-    <!-- TITLE -->
-
-    <section class="title">
-
-        <div class="title-large">
-            Essays
+        <div class="logo-small">
+            Independent Writing Project
         </div>
 
-        <div class="title-middle">
-            done by
+        <nav>
+            <a href="index.html">Essays</a>
+            <a href="about.html">About</a>
+            <a href="impact.html">Impact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN
+    ========================= -->
+
+    <main>
+
+
+        <!-- BIG TITLE -->
+
+        <section class="title">
+
+            <div class="title-large">
+                Essays
+            </div>
+
+            <div class="title-middle">
+                done by
+            </div>
+
+            <div class="title-bottom">
+                Jacob
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="intro">
+
+            <p>
+                Hi I'm Jacob. Jacob is a kid trying to send his thoughts into the world.
+                Jacob believes that words have power. But, Jacob is not so good at writing essays.
+                This is why Jacob will continue to publish essays as training.
+                Jacob wants to do something for the world.
+            </p>
+
+        </section>
+
+
+        <!-- ESSAYS -->
+
+        <div class="section-title">
+            Latest essays
         </div>
 
-        <div class="title-bottom">
-            Jacob
-        </div>
 
-    </section>
+        <article class="essay">
 
+            <div class="essay-number">
+                No. 001
+            </div>
 
-    <!-- INTRO -->
+            <h2>
+                Does AI Make Human Conversation Less Valuable?
+            </h2>
 
-    <section class="intro">
+            <p>
+                What happens to human connection when
+                machines become capable of talking to us
+                like people?
+            </p>
 
-        <p>
-            Thoughts on people, culture, technology,
-            education, and the strange questions that
-            appear when they collide.
-        </p>
+            <a class="read" href="#">
+                Read essay →
+            </a>
 
-    </section>
-
-
-    <!-- ESSAYS -->
-
-    <div class="section-title">
-        Latest essays
-    </div>
+        </article>
 
 
-    <article class="essay">
+        <article class="essay">
 
-        <div class="essay-number">
-            No. 001
-        </div>
+            <div class="essay-number">
+                No. 002
+            </div>
 
-        <h2>
-            Does AI Make Human Conversation Less Valuable?
-        </h2>
+            <h2>
+                Does Education Create National Identity?
+            </h2>
 
-        <p>
-            What happens to human connection when
-            machines become capable of talking to us
-            like people?
-        </p>
+            <p>
+                The things we learn as children may shape
+                not only what we know, but how we understand
+                the society we belong to.
+            </p>
 
-        <a class="read" href="#">
-            Read essay →
-        </a>
+            <a class="read" href="#">
+                Read essay →
+            </a>
 
-    </article>
-
-
-    <article class="essay">
-
-        <div class="essay-number">
-            No. 002
-        </div>
-
-        <h2>
-            Does Education Create National Identity?
-        </h2>
-
-        <p>
-            The things we learn as children may shape
-            not only what we know, but how we understand
-            the society we belong to.
-        </p>
-
-        <a class="read" href="#">
-            Read essay →
-        </a>
-
-    </article>
+        </article>
 
 
-    <article class="essay">
+        <article class="essay">
 
-        <div class="essay-number">
-            No. 003
-        </div>
+            <div class="essay-number">
+                No. 003
+            </div>
 
-        <h2>
-            What Makes a Person Valuable?
-        </h2>
+            <h2>
+                What Makes a Person Valuable?
+            </h2>
 
-        <p>
-            If technology continues to replace more
-            and more things humans can do, what remains
-            uniquely valuable about being human?
-        </p>
+            <p>
+                If technology continues to replace more
+                and more things humans can do, what remains
+                uniquely valuable about being human?
+            </p>
 
-        <a class="read" href="#">
-            Read essay →
-        </a>
+            <a class="read" href="#">
+                Read essay →
+            </a>
 
-    </article>
-
-
-    <!-- IMPACT -->
-
-    <section class="impact">
-
-        <h2>
-            Ideas should leave the page.
-        </h2>
-
-        <p>
-            Reading is free. If an essay gives you
-            something worth thinking about, you can
-            contribute to the project's charity fund.
-        </p>
-
-        <div class="money">
-            ¥0
-        </div>
-
-        <p>
-            currently contributed to charity
-        </p>
-
-        <a class="read" href="impact.html">
-            See the impact →
-        </a>
-
-    </section>
+        </article>
 
 
-</main>
+        <!-- CHARITY -->
+
+        <section class="impact">
+
+            <h2>
+                Ideas should leave the page.
+            </h2>
+
+            <p>
+                Reading is free. If an essay gives you
+                something worth thinking about, you can
+                contribute to the project's charity fund.
+            </p>
+
+            <div class="money">
+                ¥0
+            </div>
+
+            <p>
+                currently contributed to charity
+            </p>
+
+            <a class="read" href="impact.html">
+                See the impact →
+            </a>
+
+        </section>
 
 
-<footer>
+    </main>
 
-    Essays done by Jacob · 2026
 
-</footer>
+    <!-- FOOTER -->
+
+    <footer>
+
+        Essays done by Jacob · 2026
+
+    </footer>
 
 
 </body>
+
 </html>
 ```
