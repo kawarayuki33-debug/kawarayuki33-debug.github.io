@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No. 001 — Essays done by Jacob</title>
+    <style>
+        /* Keeping the same style as your homepage */
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            background: #e4ddcf;
+            color: #25231f;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.6;
+        }
+        header {
+            padding: 25px 5%;
+            border-bottom: 3px solid #25231f;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo-small {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        nav a {
+            margin-left: 28px;
+            color: #25231f;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        main {
+            max-width: 800px; /* Narrower for easier reading */
+            margin: 0 auto;
+            padding: 60px 35px 100px;
+        }
+
+        .essay-meta {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 8vw, 65px);
+            line-height: 1.1;
+            margin-bottom: 40px;
+            font-weight: normal;
+        }
+
+        .essay-content {
+            font-size: 20px;
+        }
+
+        /* Styling for paragraphs in the essay */
+        .essay-content p {
+            margin-bottom: 25px;
+        }
+
+        /* The Charity Section at the end */
+        .impact {
+            margin: 100px auto 0;
+            border: 3px solid #25231f;
+            padding: 40px;
+            transform: rotate(-0.5deg);
+            background: #ddd5c6;
+        }
+        .impact h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 32px;
+            margin: 0 0 18px;
+        }
+        .money {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+            margin: 20px 0 5px;
+        }
+        .read {
+            color: #25231f;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        footer {
+            border-top: 3px solid #25231f;
+            padding: 25px 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 38px; }
+            header { display: block; }
+            nav { margin-top: 15px; }
+            nav a { margin-left: 0; margin-right: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-small">Independent Writing Project</div>
+        <nav>
+            <a href="index.html">Essays</a>
+            <a href="about.html">About</a>
+            <a href="impact.html">Impact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="essay-meta">No. 001</div>
+        
+        <h1>Does equality apply when talking about parental authority?</h1>
+
+        <div class="essay-content">
+            <!-- PASTE YOUR ESSAY TEXT BELOW THIS LINE -->
+            
+            <p>
+                This is where you will write your essay. 
+                I have set it up with a large font and a layout 
+                that feels like a magazine page.
+            </p>
+
+            <p>
+                You can add as many paragraphs as you like 
+                by putting them between &lt;p&gt; and &lt;/p&gt; tags.
+            </p>
+
+            <!-- PASTE YOUR ESSAY TEXT ABOVE THIS LINE -->
+        </div>
+
+        <!-- CHARITY SECTION -->
+        <section class="impact">
+            <h2>Ideas should leave the page.</h2>
+            <p>
+                Reading is free. If this essay gave you something 
+                worth thinking about, you can contribute to the 
+                project's charity fund.
+            </p>
+            <div class="money">¥0</div>
+            <p>currently contributed to charity</p>
+            <a class="read" href="impact.html">See the impact →</a>
+        </section>
+
+    </main>
+
+    <footer>
+        Essays done by Jacob · 2026
+    </footer>
+
+</body>
+</html>
