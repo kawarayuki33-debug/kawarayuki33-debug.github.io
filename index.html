@@ -360,103 +360,192 @@
            MOBILE
         ========================= */
 
-        @media (max-width: 700px) {
-            /* MOBILE INTRO */
+   @media (max-width: 700px) {
 
-.intro {
-    padding: 25px 0 30px;
+    /* HEADER */
+
+    header {
+        padding: 18px 20px;
+        display: block;
+    }
+
+    .logo-small {
+        font-size: 11px;
+    }
+
+    nav {
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 16px 0 0;
+        font-size: 11px;
+    }
+
+
+    /* MAIN */
+
+    main {
+        width: 100%;
+        padding: 0 18px 70px;
+        overflow: hidden;
+    }
+
+
+    /* TITLE */
+
+    .title {
+        width: 100%;
+        margin: 45px auto 55px;
+    }
+
+    .title-large,
+    .title-bottom {
+        font-size: clamp(60px, 20vw, 95px);
+        letter-spacing: -4px;
+        line-height: 0.82;
+        white-space: nowrap;
+    }
+
+    .title-middle {
+        font-size: 22px;
+        margin: 20px 0;
+    }
+
+
+    /* INTRO */
+
+    .intro {
+        padding: 25px 0 30px;
+        margin-bottom: 55px;
+    }
+
+    .intro-line {
+        margin: 22px 0;
+        max-width: 100%;
+    }
+
+    .intro-1 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 22px;
+    }
+
+    .intro-2 {
+        margin-left: 0;
+    }
+
+    .intro-3 {
+        margin-left: 12%;
+        font-size: 19px;
+    }
+
+    .intro-4 {
+        margin-left: 0;
+    }
+
+    .intro-5 {
+        margin-left: 8%;
+    }
+
+    .intro-6 {
+        margin-left: 0;
+        font-size: 21px;
+        white-space: normal;
+    }
+
+
+    /* ESSAY SECTION */
+
+    .section-title {
+        margin-bottom: 22px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+
+    /* ESSAY CARDS */
+
+    .essay {
+        width: 94%;
+        max-width: none;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        padding: 20px 20px 24px;
+
+        transform: none;
+    }
+
+    .essay:nth-of-type(2),
+    .essay:nth-of-type(3),
+    .essay:nth-of-type(4) {
+        transform: none;
+    }
+
+    .essay-number {
+        font-size: 15px;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+    }
+
+    .essay h2 {
+        font-size: 27px;
+        line-height: 1.1;
+        margin-bottom: 13px;
+    }
+
+    .essay p {
+        font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 17px;
+    }
+
+
+    /* DOODLE */
+
+    .doodle-jacob {
+        width: 65px;
+        top: 125px;
+        right: 2%;
+    }
+
+
+    /* CHARITY */
+
+    .impact {
+        width: 96%;
+        margin-top: 65px;
+        padding: 28px 24px;
+
+        transform: none;
+    }
+
+    .impact h2 {
+        font-size: 30px;
+        line-height: 1.05;
+    }
+
+    .impact p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .money {
+        font-size: 38px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 20px;
+        font-size: 10px;
+    }
+
 }
-
-.intro-line {
-    margin: 20px 0;
-}
-
-.intro-1 {
-    text-align: center;
-    margin-left: 0;
-    font-size: 22px;
-}
-
-.intro-2 {
-    margin-left: 5%;
-}
-
-.intro-3 {
-    margin-left: 15%;
-    font-size: 19px;
-}
-
-.intro-4 {
-    margin-left: 5%;
-}
-
-.intro-5 {
-    margin-left: 10%;
-}
-
-.intro-6 {
-    margin-left: 5%;
-    font-size: 21px;
-    white-space: normal;
-}
-
-            header {
-                display: block;
-            }
-
-            nav {
-                margin-top: 18px;
-            }
-
-            nav a {
-                margin-left: 0;
-                margin-right: 18px;
-            }
-
-            main {
-                padding-left: 20px;
-                padding-right: 20px;
-            }
-
-            .title {
-                margin-top: 45px;
-                margin-bottom: 65px;
-            }
-
-            .title-large,
-            .title-bottom {
-                letter-spacing: -4px;
-            }
-
-            .title-middle {
-                font-size: 23px;
-            }
-
-            .intro p {
-                font-size: 17px;
-            }
-
-            .essay {
-                padding: 20px 22px 25px;
-            }
-
-            .essay h2 {
-                font-size: 29px;
-            }
-
-            .essay-number {
-                font-size: 16px;
-            }
-
-            .impact {
-                padding: 30px;
-            }
-
-            .impact h2 {
-                font-size: 32px;
-            }
-
-        }
 
         .doodle-jacob {
     width: 90px;
