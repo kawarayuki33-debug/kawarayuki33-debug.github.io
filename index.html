@@ -395,11 +395,11 @@
     }
 
 
-    /* TITLE */
-
-    .title {
+   .title {
         width: 100%;
         margin: 45px auto 55px;
+        position: relative; /* Necessary for z-index to work */
+        z-index: 1;         /* Lifts the text above the doodles */
     }
 
     .title-large,
@@ -512,23 +512,28 @@
 
     /* DOODLE */
 
-/* DOODLE */
+/* DOODLE - MOBILE FIX */
 
     .doodle-jacob, .doodle-jacob2 {
-        display: block !important; /* Forces them to show up */
-        width: 100px; 
-        top: 60px; /* Moved them up near the 'Essays' title */
-        opacity: 0.4; /* Made them faint so they don't block the text */
+        display: block !important;
+        position: absolute; /* Ensures they stay relative to the title area */
+        width: 120px;       /* Slightly larger so they are visible */
+        top: 40px;          /* Adjusted height to be near the 'Essays' title */
+        opacity: 0.3;       /* Very faint so text is still readable */
+        z-index: 0;         /* Moves them in front of the background, but... */
+        pointer-events: none; /* ...makes them "ghosts" so you can click through them */
     }
 
     .doodle-jacob {
+        left: 5%;           /* Positioned relative to the screen width */
         right: auto;
-        left: -20px; /* Poked in from the left side */
+        transform: rotate(-15deg);
     }
 
     .doodle-jacob2 {
+        right: 5%;          /* Positioned relative to the screen width */
         left: auto;
-        right: -20px; /* Poked in from the right side */
+        transform: rotate(15deg);
     }
 
 
