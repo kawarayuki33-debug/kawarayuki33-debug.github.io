@@ -1,48 +1,47 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Essays done by Jacob</title>
-
     <style>
-
         /* =========================
-           GENERAL
+           VARIABLES & RESET
         ========================= */
-
-        * {
-            box-sizing: border-box;
+        :root {
+            --bg-color: #e4ddcf;
+            --card-bg: #eee9df;
+            --text-dark: #25231f;
+            --text-muted: #777066;
+            --impact-bg: #ddd5c6;
+            --font-serif: Georgia, "Times New Roman", serif;
+            --font-sans: Arial, Helvetica, sans-serif;
         }
+
+        * { box-sizing: border-box; }
 
         body {
-    margin: 0;
-    overflow-x: hidden;
-            background: #e4ddcf;
-            color: #25231f;
-            font-family: Georgia, "Times New Roman", serif;
+            margin: 0;
+            overflow-x: hidden;
+            background: var(--bg-color);
+            color: var(--text-dark);
+            font-family: var(--font-serif);
+            line-height: 1.5;
         }
-
 
         /* =========================
            HEADER
         ========================= */
-
         header {
             padding: 25px 5%;
-            border-bottom: 3px solid #25231f;
-
+            border-bottom: 3px solid var(--text-dark);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo-small {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: var(--font-sans);
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 2px;
@@ -51,728 +50,268 @@
 
         nav a {
             margin-left: 28px;
-
-            color: #25231f;
+            color: var(--text-dark);
             text-decoration: none;
-
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: var(--font-sans);
             font-size: 13px;
             font-weight: bold;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
-
+        nav a:hover { text-decoration: underline; }
 
         /* =========================
-           MAIN
+           MAIN & DOODLES
         ========================= */
-
- /* MAIN */
-    main {
-        width: 100%;
-        padding: 0 18px 70px;
-        position: relative;
-        overflow-x: hidden; /* This acts like a 'wall' that stops the side-scrolling */
-    }
-/* DESKTOP DOODLES */
-        .doodle-jacob {
-            position: absolute;
-            width: 560px;
-            top: 40px;
-            right: 53%;
-            transform: rotate(34deg);
-            z-index: -1; 
+        main {
+            width: 100%;
+            padding: 0 18px 70px;
+            position: relative;
+            overflow-x: hidden;
         }
 
-        .doodle-jacob2 {
+        .doodle {
             position: absolute;
-            width: 508px;
-            top: 40px;
-            left: 58%;
-            transform: rotate(34deg);
             z-index: -1;
+            pointer-events: none;
         }
+        .doodle-1 { width: 560px; top: 40px; right: 53%; transform: rotate(34deg); }
+        .doodle-2 { width: 508px; top: 40px; left: 58%; transform: rotate(34deg); }
 
         /* =========================
            BIG TITLE
         ========================= */
-
-        .title {
+        .title-container {
             text-align: center;
-
             margin: 55px auto 85px;
-
             max-width: 900px;
         }
 
-        .title-large {
-            font-family: Arial, Helvetica, sans-serif;
-
+        .hero-text {
+            font-family: var(--font-sans);
             font-size: clamp(75px, 14vw, 155px);
-
             font-weight: 900;
-
             line-height: 0.78;
-
             letter-spacing: -8px;
-
             text-transform: uppercase;
+            margin: 0;
         }
 
-        .title-middle {
-            font-family: Georgia, "Times New Roman", serif;
-
+        .hero-sub {
             font-size: 28px;
-
             font-style: italic;
-
             margin: 28px 0;
+            display: block;
         }
-
-        .title-bottom {
-            font-family: Arial, Helvetica, sans-serif;
-
-            font-size: clamp(75px, 14vw, 155px);
-
-            font-weight: 900;
-
-            line-height: 0.78;
-
-            letter-spacing: -8px;
-
-            text-transform: uppercase;
-        }
-
 
         /* =========================
-           JACOB INTRODUCTION
+           INTRODUCTION
         ========================= */
-
-     .intro {
-    border-top: 3px solid #25231f;
-    border-bottom: 3px solid #25231f;
-
-    padding: 35px 0 45px;
-
-    margin-bottom: 75px;
-
-    font-size: 19px;
-    line-height: 1.5;
-}
-
-.intro-line {
-    margin: 18px 0;
-}
-
-.intro-1 {
-    text-align: center;
-    font-size: 25px;
-}
-
-.intro-2 {
-    margin-left: 32%;
-}
-
-.intro-3 {
-    margin-left: 48%;
-    font-size: 22px;
-}
-
-.intro-4 {
-    margin-left: 42%;
-}
-
-.intro-5 {
-    margin-left: 35%;
-}
-
-.intro-6 {
-    margin-left: 39%;
-    font-size: 24px;
-}
-
-
-        /* =========================
-           SECTION TITLE
-        ========================= */
-
-        .section-title {
-            font-family: Arial, Helvetica, sans-serif;
-
-            font-size: 14px;
-
-            font-weight: bold;
-
-            letter-spacing: 3px;
-
-            text-transform: uppercase;
-
-            margin-bottom: 28px;
+        .intro {
+            border-top: 3px solid var(--text-dark);
+            border-bottom: 3px solid var(--text-dark);
+            padding: 35px 0 45px;
+            margin-bottom: 75px;
+            font-size: 19px;
         }
 
+        .intro-line { margin: 18px 0; }
+        .intro-1 { text-align: center; font-size: 25px; }
+        .intro-2 { margin-left: 32%; }
+        .intro-3 { margin-left: 48%; font-size: 22px; }
+        .intro-4 { margin-left: 42%; }
+        .intro-5 { margin-left: 35%; }
+        .intro-6 { margin-left: 39%; font-size: 24px; }
 
         /* =========================
            ESSAYS
         ========================= */
+        .section-label {
+            font-family: var(--font-sans);
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
 
         .essay {
-            border: 2px solid #777066;
-
+            border: 2px solid var(--text-muted);
             padding: 22px 28px 28px;
-
             margin: 0 auto 22px;
-
             max-width: 850px;
-
-            background: #eee9df;
+            background: var(--card-bg);
         }
 
-        .essay:nth-of-type(2) {
-            transform: rotate(-0.35deg);
-        }
-
-        .essay:nth-of-type(3) {
-            transform: rotate(0.25deg);
-        }
-
-        .essay:nth-of-type(4) {
-            transform: rotate(-0.2deg);
-        }
-
-
-        /* ESSAY NUMBER */
+        /* Subtle rotations for the "scattered paper" look */
+        .essay:nth-of-type(odd) { transform: rotate(-0.3deg); }
+        .essay:nth-of-type(even) { transform: rotate(0.25deg); }
 
         .essay-number {
-            font-family: Arial, Helvetica, sans-serif;
-
+            font-family: var(--font-sans);
             font-size: 18px;
-
             font-weight: bold;
-
             letter-spacing: 3px;
-
             margin-bottom: 16px;
         }
 
-
-        /* ESSAY TITLE */
-
         .essay h2 {
             font-size: 34px;
-
             line-height: 1.08;
-
             font-weight: normal;
-
             margin: 0 0 13px;
-
-            max-width: 800px;
         }
 
-
-        /* ESSAY DESCRIPTION */
-
-        .essay p {
-            font-size: 16px;
-
-            line-height: 1.6;
-
-            max-width: 650px;
-
-            margin: 0 0 18px;
-        }
-
-
-        /* READ BUTTON */
-
-        .read {
-            color: #25231f;
-
-            font-family: Arial, Helvetica, sans-serif;
-
+        .read-link {
+            color: var(--text-dark);
+            font-family: var(--font-sans);
             font-size: 13px;
-
             font-weight: bold;
-
             letter-spacing: 1px;
-
             text-decoration: none;
-
             text-transform: uppercase;
         }
-
-        .read:hover {
-            text-decoration: underline;
-        }
-
+        .read-link:hover { text-decoration: underline; }
 
         /* =========================
-           CHARITY / IMPACT
+           IMPACT SECTION
         ========================= */
-
         .impact {
             margin: 95px auto 0;
-
             max-width: 900px;
-
-            border: 3px solid #25231f;
-
+            border: 3px solid var(--text-dark);
             padding: 40px;
-
-            transform: rotate(-0.5deg);
-
-            background: #ddd5c6;
+            background: var(--impact-bg);
         }
 
-        .impact h2 {
-            font-family: Arial, Helvetica, sans-serif;
-
-            font-size: 40px;
-
-            line-height: 1;
-
-            margin: 0 0 18px;
+        .impact h2 { font-family: var(--font-sans); font-size: 40px; margin: 0 0 18px; }
+        
+        .impact-highlight {
+            font-size: 22px;
+            font-style: italic;
+            margin-bottom: 30px;
         }
 
-        .impact p {
-            max-width: 650px;
-
-            font-size: 17px;
-
-            line-height: 1.6;
-        }
-
-        .money {
-            font-family: Arial, Helvetica, sans-serif;
-
-            font-size: 46px;
-
+        .pledge-box {
+            font-family: var(--font-sans);
+            font-size: 28px;
             font-weight: bold;
-
-            margin: 25px 0 5px;
+            border: 2px dashed var(--text-dark);
+            padding: 15px;
+            display: inline-block;
+            margin: 25px 0;
         }
 
+        .btn-black {
+            background: var(--text-dark);
+            color: var(--bg-color);
+            padding: 12px 24px;
+            display: inline-block;
+            text-decoration: none;
+            font-family: var(--font-sans);
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
 
         /* =========================
            FOOTER
         ========================= */
-
         footer {
-            border-top: 3px solid #25231f;
-
+            border-top: 3px solid var(--text-dark);
             padding: 25px 5%;
-
-            font-family: Arial, Helvetica, sans-serif;
-
+            font-family: var(--font-sans);
             font-size: 12px;
-
             letter-spacing: 1px;
-
             text-transform: uppercase;
         }
 
-
         /* =========================
-           MOBILE
+           MOBILE RESPONSIVENESS
         ========================= */
+        @media (max-width: 700px) {
+            header { display: block; padding: 18px 20px; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 16px 0 0; }
 
-   @media (max-width: 700px) {
+            .hero-text { font-size: clamp(40px, 15vw, 65px); letter-spacing: -2px; }
+            .hero-sub { font-size: 22px; }
 
-    /* HEADER */
+            /* Flatten Intro on mobile for readability */
+            .intro-line { margin-left: 0 !important; text-align: center; }
+            
+            .essay { width: 100%; transform: none !important; }
+            .essay h2 { font-size: 24px; }
 
-    header {
-        padding: 18px 20px;
-        display: block;
-    }
+            .doodle-1 { margin-left: -260px; left: 50%; width: 300px; }
+            .doodle-2 { margin-left: -10px; left: 50%; width: 300px; }
 
-    .logo-small {
-        font-size: 11px;
-    }
-
-    nav {
-        margin-top: 15px;
-    }
-
-    nav a {
-        margin: 0 16px 0 0;
-        font-size: 11px;
-    }
-
-
-    /* MAIN */
-
-
-    main {
-        width: 100%;
-        padding: 0 18px 70px;
-        position: relative;
-    }
-
-
-   .title {
-        width: 100%;
-        margin: 45px auto 55px;
-        position: relative; /* Necessary for z-index to work */
-        z-index: 1;         /* Lifts the text above the doodles */
-    }
-
-    .title-large,
-    .title-bottom {
-        font-size: clamp(40px, 15vw, 65px); /* Lowered these numbers */
-        letter-spacing: -2px;
-        line-height: 0.85;
-        white-space: nowrap;
-    }
-
-    .title-middle {
-        font-size: 22px;
-        margin: 20px 0;
-    }
-
-
-    /* INTRO */
-
-    .intro {
-        padding: 25px 0 30px;
-        margin-bottom: 55px;
-    }
-
-    .intro-line {
-        margin: 22px 0;
-        max-width: 100%;
-    }
-
-    .intro-1 {
-        text-align: center;
-        margin-left: 0;
-        font-size: 22px;
-    }
-
-    .intro-2 {
-        margin-left: 0;
-    }
-
-    .intro-3 {
-        margin-left: 12%;
-        font-size: 19px;
-    }
-
-    .intro-4 {
-        margin-left: 0;
-    }
-
-    .intro-5 {
-        margin-left: 8%;
-    }
-
-    .intro-6 {
-        margin-left: 0;
-        font-size: 21px;
-        white-space: normal;
-    }
-
-
-    /* ESSAY SECTION */
-
-    .section-title {
-        margin-bottom: 22px;
-        font-size: 12px;
-        letter-spacing: 2px;
-    }
-
-
-    /* ESSAY CARDS */
-
-    .essay {
-        width: 94%;
-        max-width: none;
-
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-
-        padding: 20px 20px 24px;
-
-        transform: none;
-    }
-
-    .essay:nth-of-type(2),
-    .essay:nth-of-type(3),
-    .essay:nth-of-type(4) {
-        transform: none;
-    }
-
-    .essay-number {
-        font-size: 15px;
-        letter-spacing: 2px;
-        margin-bottom: 14px;
-    }
-
-.essay h2 {
-        font-size: 22px; /* Smaller font */
-        line-height: 1.2;
-        margin-bottom: 10px;
-    }
-
-    .read {
-        font-size: 11px; /* Smaller button text */
-    }
-    .essay p {
-        font-size: 15px;
-        line-height: 1.55;
-        margin-bottom: 17px;
-    }
-
-
-    /* DOODLE */
-
-/* DOODLE - MOBILE CENTERED FIX (HUGE & LOCKED) */
-    .doodle-jacob, .doodle-jacob2 {
-        display: block !important;
-        position: absolute !important;
-        width: 304px;      /* Slightly adjusted for better fit */
-        top: -9px;          
-        z-index: 0;        
-        pointer-events: none; 
-        left: 50%;         
-    }
-
-    .doodle-jacob {
-        /* This moves the center of the image to the left edge of the phone */
-        margin-left: -260px; 
-        transform: rotate(17deg);
-    }
-
-    .doodle-jacob2 {
-        /* This moves the center of the image to the right edge of the phone */
-        margin-left: -10px;   
-        transform: rotate(18deg);
-    }
-    /* CHARITY */
-
-    .impact {
-        width: 96%;
-        margin-top: 65px;
-        padding: 28px 24px;
-
-        transform: none;
-    }
-
-.impact h2 {
-        font-size: 24px;
-        line-height: 1.1;
-    }
-
-    .impact p {
-        font-size: 14px;
-    }
-
-    .impact .read {
-        padding: 8px 15px !important; /* Makes the black button smaller */
-        font-size: 11px;
-    }
-
-    .money {
-        font-size: 20px !important; /* Shrinks the 'No money collected' box */
-    }
-
-    /* FOOTER */
-
-    footer {
-        padding: 20px;
-        font-size: 10px;
-    }
-
-}
-
-        
+            .impact h2 { font-size: 28px; }
+            .pledge-box { font-size: 20px; width: 100%; text-align: center; }
+        }
     </style>
-
 </head>
-
-
 <body>
 
-
-    <!-- =========================
-         HEADER
-    ========================= -->
-
-  <header>
-    <div class="logo-small">
-        Independent Writing Project
-    </div>
-
-    <nav>
-        <a href="index.html">Essays</a>
-        <!-- Change the line below -->
-        <a href="details.html">Impact</a>
-    </nav>
-</header>
-
-
-    <!-- =========================
-         MAIN
-    ========================= -->
+    <header>
+        <div class="logo-small">Independent Writing Project</div>
+        <nav>
+            <a href="index.html">Essays</a>
+            <a href="details.html">Impact</a>
+        </nav>
+    </header>
 
     <main>
-
-<img class="doodle-jacob" src="jacob01.png" alt="">
-
-<img class="doodle-jacob2" src="jacob02.png" alt="">
+        <!-- Descriptive alt tags are better for SEO/Accessibility -->
+        <img class="doodle doodle-1" src="jacob01.png" alt="Decorative background doodle">
+        <img class="doodle doodle-2" src="jacob02.png" alt="Decorative background doodle">
         
-        <!-- BIG TITLE -->
-
-        <section class="title">
-
-            <div class="title-large">
-                Essays
-            </div>
-
-            <div class="title-middle">
-                done by
-            </div>
-
-            <div class="title-bottom">
-                Jacob
-            </div>
-
+        <section class="title-container">
+            <h1 class="hero-text">
+                Essays <span class="hero-sub">done by</span> Jacob
+            </h1>
         </section>
 
+        <section class="intro">
+            <div class="intro-line intro-1">Hi I'm Jacob.</div>
+            <div class="intro-line intro-2">Jacob is a student trying to send his thoughts into the world.</div>
+            <div class="intro-line intro-3">Jacob believes that words have power.</div>
+            <div class="intro-line intro-4">But, Jacob is not so good at writing essays.</div>
+            <div class="intro-line intro-5">This is why Jacob will continue to publish essays as training.</div>
+            <div class="intro-line intro-6">Jacob wants to do something for the world.</div>
+        </section>
 
-        <!-- INTRODUCTION -->
+        <div class="section-label">Latest essays</div>
 
-      <section class="intro">
-
-    <div class="intro-line intro-1">
-        Hi I'm Jacob.
-    </div>
-
-    <div class="intro-line intro-2">
-        Jacob is a student trying to send his thoughts into the world.
-    </div>
-
-    <div class="intro-line intro-3">
-        Jacob believes that words have power.
-    </div>
-
-    <div class="intro-line intro-4">
-        But, Jacob is not so good at writing essays.
-    </div>
-
-    <div class="intro-line intro-5">
-        This is why Jacob will continue to publish essays as training.
-    </div>
-
-    <div class="intro-line intro-6">
-        Jacob wants to do something for the world.
-    </div>
-
-</section>
-
-
-        <!-- ESSAYS -->
-
-        <div class="section-title">
-            Latest essays
-        </div>
-
-<article class="essay">
-
-            <div class="essay-number">
-                No. 001
-            </div>
-
-            <h2>
-                Does equality apply when talking about parental authority?
-            </h2>
-
-            <a class="read" href="essay-001.html">
-                Read essay →
-            </a>
-
+        <article class="essay">
+            <div class="essay-number">No. 001</div>
+            <h2>Does equality apply when talking about parental authority?</h2>
+            <a class="read-link" href="essay-001.html">Read essay →</a>
         </article>
 
         <article class="essay">
-
-            <div class="essay-number">
-                No. 002
-            </div>
-
-            <h2>
-               not ready yet
-            </h2>
-
-            <a class="read" href="#">
-                Read essay →
-            </a>
-
+            <div class="essay-number">No. 002</div>
+            <h2>Coming Soon</h2>
+            <a class="read-link" href="#">Read essay →</a>
         </article>
 
-
-        <article class="essay">
-
-            <div class="essay-number">
-                No. 003
-            </div>
-
-            <h2>
-               not ready yet
-            </h2>
-
-            <a class="read" href="#">
-                Read essay →
-            </a>
-
-        </article>
-
-
-        <!-- CHARITY -->
-
-      <!-- PLEDGE SECTION -->
         <section class="impact">
-
             <h2>Words have power. To move one's heart.</h2>
-
-            <p style="font-size: 22px; font-style: italic; margin-bottom: 30px;">
-                Words are what make us beautifully human.
-            </p>
-
+            <p class="impact-highlight">Words are what make us beautifully human.</p>
             <p>
                 I am currently working to partner with organizations in Sapporo to make education a standard right. 
                 Before we go live, I am collecting "pledges" to prove this project can make a difference.
             </p>
-
-            <div class="money" style="font-size: 28px; border: 2px dashed #25231f; padding: 15px; display: inline-block;">
-                No money is collected yet.
-            </div>
-
-            <p style="margin-top: 20px;">
-                Click below to see the project details and log your support.
-            </p>
-
-            <a class="read" href="details.html" style="background: #25231f; color: #e4ddcf; padding: 10px 20px; display: inline-block; margin-top: 10px;">
-                Project Details & Pledge →
-            </a>
-
+            <div class="pledge-box">No money is collected yet.</div>
+            <p>Click below to see the project details and log your support.</p>
+            <a class="btn-black" href="details.html">Project Details & Pledge →</a>
         </section>
     </main>
 
-
-    <!-- FOOTER -->
-
     <footer>
-
         Essays done by Jacob · 2026
-
     </footer>
 
-
 </body>
-
 </html>
-```
