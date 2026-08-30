@@ -77,7 +77,26 @@
             padding: 0 35px 100px;
             position: relative; /* This acts as an anchor for the absolute doodles */
         }
+/* DESKTOP DOODLES */
+        .doodle-jacob {
+            position: absolute;
+            width: 560px;
+            top: 40px;
+            right: 53%;
+            transform: rotate(34deg);
+            z-index: -1; 
+            opacity: 0.7; 
+        }
 
+        .doodle-jacob2 {
+            position: absolute;
+            width: 508px;
+            top: 40px;
+            left: 63%;
+            transform: rotate(34deg);
+            z-index: -1;
+            opacity: 0.7;
+        }
 
         /* =========================
            BIG TITLE
@@ -513,25 +532,26 @@
     /* DOODLE */
 
 /* DOODLE - MOBILE CENTERED FIX */
-
     .doodle-jacob, .doodle-jacob2 {
         display: block !important;
-        position: absolute;
-        width: 180px;      /* Slightly larger for better framing */
-        top: 10px;         /* Near the top of the 'Essays' word */
-        opacity: 0.3;
-        z-index: 0;
-        pointer-events: none;
-        left: 50%;         /* Move to exact center of screen */
+        position: absolute !important; /* Force position */
+        width: 140px;      
+        top: 20px;         
+        opacity: 0.5;      /* Darkened so they are visible */
+        z-index: 10;       /* Lifts them up */
+        pointer-events: none; 
+        left: 50%;         
     }
 
     .doodle-jacob {
-        margin-left: -180px; /* Pull it to the left of the center */
+        margin-left: -170px; 
+        right: auto;
         transform: rotate(-15deg);
     }
 
     .doodle-jacob2 {
-        margin-left: 0px;    /* Start it at the center and let it go right */
+        margin-left: 30px;    
+        left: 50%;
         transform: rotate(15deg);
     }
 
@@ -571,25 +591,7 @@
     }
 
 }
-.doodle-jacob {
-            position: absolute;
-            width: 560px;
-            top: 40px;
-            right: 53%;
-            transform: rotate(34deg);
-            z-index: -1; /* This keeps the drawing behind the text so you can still click links */
-            opacity: 0.7; /* Makes it slightly see-through, feeling more like ink on paper */
-        }
 
-        .doodle-jacob2 {
-            position: absolute;
-            width: 508px;
-            top: 40px;
-            left: 63%;
-            transform: rotate(34deg);
-            z-index: -1;
-            opacity: 0.7;
-        }
         
     </style>
 
