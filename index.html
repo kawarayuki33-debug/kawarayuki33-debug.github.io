@@ -508,10 +508,20 @@
 
     /* DOODLE */
 
+/* DOODLE */
+
+    .doodle-jacob, .doodle-jacob2 {
+        width: 80px; /* Make them small on mobile */
+        top: 120px;
+        transform: none; /* Stop the rotation so they don't block text on small screens */
+    }
+
     .doodle-jacob {
-        width: 65px;
-        top: 125px;
-        right: 2%;
+        right: 75%;
+    }
+
+    .doodle-jacob2 {
+        left: 75%;
     }
 
 
@@ -551,8 +561,8 @@
 .doodle-jacob {
             position: absolute;
             width: 560px;
-            top: 85px;
-            right: 60%;
+            top: 80px;
+            right: 58%;
             transform: rotate(34deg);
             z-index: -1; /* This keeps the drawing behind the text so you can still click links */
             opacity: 0.7; /* Makes it slightly see-through, feeling more like ink on paper */
@@ -561,8 +571,8 @@
         .doodle-jacob2 {
             position: absolute;
             width: 508px;
-            top: 90px;
-            left: 60%;
+            top: 80px;
+            left: 63%;
             transform: rotate(34deg);
             z-index: -1;
             opacity: 0.7;
