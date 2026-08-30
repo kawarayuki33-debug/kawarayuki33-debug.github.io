@@ -531,30 +531,27 @@
 
     /* DOODLE */
 
-/* DOODLE - MOBILE CENTERED FIX */
+/* DOODLE - MOBILE CENTERED FIX (LARGER) */
     .doodle-jacob, .doodle-jacob2 {
         display: block !important;
-        position: absolute !important; /* Force position */
-        width: 140px;      
-        top: 20px;         
-        opacity: 0.5;      /* Darkened so they are visible */
-        z-index: 10;       /* Lifts them up */
+        position: absolute !important;
+        width: 280px;      /* Increased from 140px */
+        top: -10px;        /* Moved up slightly */
+        opacity: 0.4;      /* Slightly softer */
+        z-index: 0;        /* Behind text but in front of background */
         pointer-events: none; 
         left: 50%;         
     }
 
     .doodle-jacob {
-        margin-left: -170px; 
-        right: auto;
-        transform: rotate(-15deg);
+        margin-left: -310px; /* Pushes it further left to clear the text */
+        transform: rotate(-10deg);
     }
 
     .doodle-jacob2 {
-        margin-left: 30px;    
-        left: 50%;
+        margin-left: 20px;   /* Pushes it further right */
         transform: rotate(15deg);
     }
-
     /* CHARITY */
 
     .impact {
